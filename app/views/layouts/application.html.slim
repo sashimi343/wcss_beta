@@ -7,4 +7,21 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+    // Menu ====================================================================
+    ul.menu
+      li.current
+        a href="#" Item1
+      li
+        a href="#" Item2
+      li
+        a href="#" Item3
+    // Content =================================================================
+    .grid
+      .col_12
+        = yield
+    // Footer
+    .clear
+    #footer
+      | Copyright (C) 2016 sashimi (
+      a href="https://twitter.com/sashim1343" target="_blank" @sashim1343
+      | ) All Rights Reserved.
