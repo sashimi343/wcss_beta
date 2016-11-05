@@ -7,4 +7,28 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+    // Menu ====================================================================
+    ul.menu.center
+      li
+        a href="/" WCSS beta
+      li.divider
+        a href="#"
+          i.fa.fa-question-circle
+          | WCSSについて
+      li
+        a href="#" ユーザ登録・ログイン
+      li
+        a href="#" サークル登録・ログイン
+    // Content =================================================================
+    #container
+      h2 WCSS
+      p WCSSはWebコンピレーションを支援するシステムです
+      #content
+        .grid.flex
+          = yield
+        // Footer
+        .clear
+    #footer
+      | Copyright (C) 2016 sashimi (
+      a href="https://twitter.com/sashim1343" target="_blank" @sashim1343
+      | ) All Rights Reserved.
