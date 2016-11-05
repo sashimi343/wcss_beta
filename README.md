@@ -12,3 +12,8 @@ This system supports people who wants to organize compilation in situations of
 * Participating compilations
 * Submitting your tracks
 * Registering information about your tracks
+
+
+# License
+
+Copyright (C) 2016 Kohei Kakimoto. Released under MIT License - see the LICENSE file for details.
