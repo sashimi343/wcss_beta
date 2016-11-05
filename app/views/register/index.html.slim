@@ -1,0 +1,26 @@
+.col_12
+  h3 新規登録
+  p
+    | 以下のフォームに必要事項を入力してください。
+      (*)がついている項目は必須項目です。
+  p
+    | 既にアカウントをお持ちですか？
+      その場合は
+    a href="#" こちらからログインしてください
+  hr
+  form.vertical
+    label for="email" メールアドレス (*)
+    input#email type="text"
+
+    label for="password"
+      | パスワード (*)
+      span.right 4～20文字、半角英数字
+    input#password type="password"
+
+    label for="password-confirm" パスワード(確認) (*)
+    input#password-confirm type="password"
+
+    label for="name" お名前 (*)
+    input#name type="text"
+
+    input type="submit"
