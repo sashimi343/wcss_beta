@@ -8,19 +8,26 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     // Menu ====================================================================
-    ul.menu
-      li.current
-        a href="#" Item1
+    ul.menu.center
       li
-        a href="#" Item2
+        a href="/" WCSS beta
+      li.divider
+        a href="#"
+          i.fa.fa-question-circle
+          | WCSSについて
       li
-        a href="#" Item3
+        a href="#" ユーザ登録・ログイン
+      li
+        a href="#" サークル登録・ログイン
     // Content =================================================================
-    .grid
-      .col_12
-        = yield
-    // Footer
-    .clear
+    #container
+      h2 WCSS
+      p WCSSはWebコンピレーションを支援するシステムです
+      #content
+        .grid.flex
+          = yield
+        // Footer
+        .clear
     #footer
       | Copyright (C) 2016 sashimi (
       a href="https://twitter.com/sashim1343" target="_blank" @sashim1343
