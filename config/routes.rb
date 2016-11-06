@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get '/register', to: 'register#index'
-  get '/login', to: 'login#index'
-  get '/dashboard', to: 'dashboard#index'
+  get 'register', to: 'register#index'
+  get 'login', to: 'login#index'
+
+  namespace :dashboard do
+    root to: 'top#index'
+  end
 
   root to: 'top#index'
 
