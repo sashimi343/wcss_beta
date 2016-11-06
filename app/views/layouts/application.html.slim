@@ -8,7 +8,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     // Menu ====================================================================
-    ul.menu.center
+    ul.menu
       li
         a href="/" WCSS beta
       li.divider
@@ -16,9 +16,7 @@ html
           i.fa.fa-question-circle
           | WCSSについて
       li
-        a href="#" ユーザ登録・ログイン
-      li
-        a href="#" サークル登録・ログイン
+        a href="/login" ログイン
     // Content =================================================================
     #container
       h2 WCSS
