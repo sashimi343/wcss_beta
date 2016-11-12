@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  resources :compilations
   get 'register', to: 'register#index'
   get 'login', to: 'login#index'
 
   namespace :dashboard do
     root to: 'top#index'
-    resources 'compilations'
+    resources :compilations
   end
 
   root to: 'top#index'
