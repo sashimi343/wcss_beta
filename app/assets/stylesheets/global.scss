@@ -66,8 +66,9 @@ body {
     width: 180px;
     height: 100%;
     border-right: 1px solid #c0a0a0;
-    position: absolute;
+    position: fixed;
     left: -180px;
     top: 0;
+    z-index: 250;
     background-color: #e0c8c8;
 }

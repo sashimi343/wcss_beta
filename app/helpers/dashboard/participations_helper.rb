@@ -1,2 +1,2 @@
-module Dashboard::ParticipationHelper
+module Dashboard::ParticipationsHelper
 end
