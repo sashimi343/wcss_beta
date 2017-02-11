@@ -7,18 +7,19 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    ul.menu
-      li
-        a.side_menu_open
-          i.fa.fa-bars.fa-lg
-      li
-        a href="/" WCSS beta
-      li
-        a href="#"
-          i.fa.fa-question-circle
-          | WCSSについて
-      li
-        a href="/login" ログイン
+    #navbar
+      ul.menu
+        li
+          a.side_menu_open
+            i.fa.fa-bars.fa-lg
+        li
+          a href="/" WCSS beta
+        li
+          a href="#"
+            i.fa.fa-question-circle
+            | WCSSについて
+        li
+          a href="/login" ログイン
     #container
       h2 WCSS
       p WCSSはWebコンピレーションの開催・参加を支援するシステムです

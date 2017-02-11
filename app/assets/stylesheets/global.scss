@@ -29,6 +29,14 @@ body {
     padding: 0 10px;
 }
 
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
 #content {
     margin: 40px 10px;
     background-color: #fefefe;
