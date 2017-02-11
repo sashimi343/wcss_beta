@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   namespace :dashboard do
     root to: 'top#index'
+    resources :participations
     resources :compilations
   end
 
