@@ -9,6 +9,9 @@ html
   body
     ul.menu
       li
+        a.side_menu_open
+          i.fa.fa-bars.fa-lg
+      li
         a href="/" WCSS beta
       li
         a href="#"
@@ -27,3 +30,20 @@ html
       | Copyright (C) 2016-2017 Kohei Kakimoto (
       a href="https://twitter.com/sashim1343" target="_blank" @sashim1343
       | ) All Rights Reserved.
+    #side_menu
+      ul.menu.vertical
+        li
+          a.side_menu_close
+            i.fa.fa-times.fa-lg
+        li
+          a href="/dashboard" マイページ
+        li
+          a href="/dashboard/participations" 参加したコンピ
+        li
+          a href="/dashboard/compilations" 開催したコンピ
+        li
+          a href="/dashboard/compilations/new" 新規コンピ開催
+        li
+          a href="#" アカウント設定
+        li
+          a href="#" ログアウト

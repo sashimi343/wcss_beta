@@ -1,106 +1,46 @@
-.col_9
-  h3 コンピ管理
-  ul.tabs.left
-    li
-      a href="#participating" 参加中のコンピ
-    li
-      a href="#organizing" 主催しているコンピ
-    li
-      a href="#participated" 過去に参加したコンピ
-    li
-      a href="#organized" 過去に主催したコンピ
-  // Contents in tab
-  .tab-content#participating
-    table
-      thead
-        tr
-          th コンピ名
-          th 概要
-          th 主催者
-          th 締め切り
-      tbody
-        tr
-          td
-            a href="#" NIKU on FIRE
-          td 焼肉のメニューをテーマに楽曲を作成するコンピです
-          td さしみ
-          td 2016/12/31 23:59:59 (JST)
-        tr
-          td
-            a href="#" AD:曲
-          td 曲ならなんでもオッケー、なゆるゆるコンピです
-          td なんちゃらSystem
-          td 2017/01/23 23:59:59 (JST)
-        tr
-          td
-            a href="#" Third FISH
-          td "Basics" is the theme of the compilation. What's your ...
-          td Kohei Kakimoto
-          td 2018/05/01 12:00:00 (JST)
-  .tab-content#organizing
-    table
-      thead
-        tr
-          th コンピ名
-          th 概要
-          th 締め切り
-          th 編集
-      tbody
-        tr
-          td
-            a href="#" NIKU on FIRE
-          td 焼肉のメニューをテーマに楽曲を作成するコンピです
-          td 2016/12/31 23:59:59 (JST)
-          td
-            a href="#"
-              i.fa.fa-pencil
-        tr
-          td
-            a href="#" snow glare EP
-          td 「snow glare / 319 & さしみ」のリミックスを募集中です。条件は ...
-          td 2017/03/19 03:43:00 (JST)
-          td
-            a href="#"
-              i.fa.fa-pencil
-  .tab-content#participated
-    p
-      | 過去に参加したコンピはありません
-  .tab-content#organized
-    table
-      thead
-        tr
-          th コンピ名
-          th 概要
-          th 締め切り
-          th 編集
-      tbody
-        tr
-          td
-            a href="#" Second FISH
-          td 原点回帰をテーマにしたコンピです。13FISH n周年記念。
-          td 2016/05/03 23:59:59 (JST)
-          td
-            a href="#"
-              i.fa.fa-pencil
-.col_3
-  ul.menu.vertical.right
-    li
-      a href="/dashboard" マイページ
-    li
-      a href="/dashboard/compilations#participating" コンピ管理
-      ul
-        li
-          a href="/dashboard/compilations#participating" 参加中のコンピ
-        li
-          a href="/dashboard/compilations#organizing" 主催しているコンピ
-        li
-          a href="/dashboard/compilations#participated" 過去に参加したコンピ
-        li
-          a href="/dashboard/compilations#organized" 過去に主催したコンピ
-
-    li
-      a href="/dashboard/compilations/new" コンピ開催
-    li
-      a href="#" アカウント設定
-    li
-      a href="#" ログアウト
+.col_12
+  h3 開催したコンピ
+  table.striped.sortable
+    thead
+      tr
+        th コンピ名
+        th 概要
+        th 主催者
+        th 締め切り
+    tbody
+      tr
+        td
+          a href="#" NIKU on FIRE
+        td 焼肉のメニューをテーマに楽曲を作成するコンピです
+        td さしみ
+        td 2016/12/31 23:59:59 (JST)
+      tr
+        td
+          a href="#" AD:曲
+        td 曲ならなんでもオッケー、なゆるゆるコンピです
+        td なんちゃらSystem
+        td 2017/01/23 23:59:59 (JST)
+      tr
+        td
+          a href="#" Third FISH
+        td "Basics" is the theme of the compilation. What's your ...
+        td Kohei Kakimoto
+        td 2018/05/01 12:00:00 (JST)
+      tr
+        td
+          a href="#" NIKU on FIRE
+        td 焼肉のメニューをテーマに楽曲を作成するコンピです
+        td さしみ
+        td 2016/12/31 23:59:59 (JST)
+      tr
+        td
+          a href="#" AD:曲
+        td 曲ならなんでもオッケー、なゆるゆるコンピです
+        td なんちゃらSystem
+        td 2017/01/23 23:59:59 (JST)
+      tr
+        td
+          a href="#" Third FISH
+        td "Basics" is the theme of the compilation. What's your ...
+        td Kohei Kakimoto
+        td 2018/05/01 12:00:00 (JST)

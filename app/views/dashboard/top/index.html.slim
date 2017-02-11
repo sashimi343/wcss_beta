@@ -1,4 +1,4 @@
-.col_9
+.col_12
   h3 マイページ
   p
     | ようこそさしみさん。
@@ -20,31 +20,8 @@
       | 2016/10/31 18:22:51 
       a href="#" snow glare EP
       | を開催しました
-.col_3
-  ul.menu.vertical.right
-    li
-      a href="/dashboard" マイページ
-    li
-      a href="/dashboard/compilations#participating" コンピ管理
-      ul
-        li
-          a href="/dashboard/compilations#participating" 参加中のコンピ
-        li
-          a href="/dashboard/compilations#organizing" 主催しているコンピ
-        li
-          a href="/dashboard/compilations#participated" 過去に参加したコンピ
-        li
-          a href="/dashboard/compilations#organized" 過去に主催したコンピ
-
-    li
-      a href="/dashboard/compilations/new" コンピ開催
-    li
-      a href="#" アカウント設定
-    li
-      a href="#" ログアウト
-.col_12
   h4 参加中のコンピ
-  table
+  table.striped.sortable
     thead
       tr
         th コンピ名
@@ -71,7 +48,7 @@
         td Kohei Kakimoto
         td 2018/05/01 12:00:00 (JST)
   h4 開催中のコンピ
-  table
+  table.striped.sortable
     thead
       tr
         th コンピ名

@@ -1,4 +1,6 @@
 class Dashboard::CompilationsController < ApplicationController
+  layout 'dashboard'
+
   def index
   end
 
