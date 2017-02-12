@@ -1,2 +1,69 @@
-h1 Dashboard::Compilations#new
-p Find me in app/views/dashboard/compilations/new.html.slim
+.col_12
+  h3 コンピを開催する
+  p.col_12
+    | 以下のフォームに必要事項を記入してください。
+      (*)のついた項目は必須項目です。
+
+  hr
+
+  form.vertical
+    fieldset
+      legend 基本情報
+      p.col_12
+        label for="title" タイトル (*)
+        input#title type="text" name="title" required="required"
+      p.col_12
+        label for="description" 詳細
+        textarea#description name="description"
+      p.col_12
+        label for="deadline" 締め切り (*)
+        input#deadline type="datetime-local" name="deadline" value="2017-12-31T23:59:59"
+    fieldset
+      legend 音源の提出について
+      p.col_12
+        label
+          | 提出方法
+          span
+            a href="/dashboard/settings" target="_blank" クラウドサービス連携
+            | を許可すると、あなたのクラウドストレージに提出楽曲を保存できます
+        select
+          option name="submission_method" value="0" アップロード先URLをメールで送信
+          option name="submission_method" value="1" 主催者のDropboxにアップロード
+          option name="submission_method" value="2" 主催者のGoogle Driveにアップロード
+      p.col_12
+        label ファイル形式
+        select
+          option name="submission_format" value="0" WAV
+          option name="submission_format" value="1" WAV (44.1kHz/16bit 以上)
+          option name="submission_format" value="2" WAV (44.1kHz/24bit 以上)
+          option name="submission_format" value="3" WAV (48.0kHz/16bit 以上)
+          option name="submission_format" value="4" WAV (48.0kHz/24bit 以上)
+          option name="submission_format" value="10" MP3
+          option name="submission_format" value="11" MP3 (192kbps 以上)
+          option name="submission_format" value="12" MP3 (320kbps)
+          option name="submission_format" value="20" その他 (自由記述)
+        input type="text" name="another_submission_format" placeholder="その他の提出ファイル形式"
+      p.col_12
+        label マスタリングの有無
+        input#is_mastered_false type="radio" name="is_mastered" value="0" checked="checked"
+        label.inline for="is_mastered_false" 未マスタリング　
+        input#is_mastered_true type="radio" name="is_mastered" value="1"
+        label.inline for="is_mastered_true" マスタリング済み　
+        input#is_mastered_any type="radio" name="is_mastered" value="2"
+        label.inline for="is_mastered_any" 指定しない　
+      p.col_12
+        label for="peak"
+          | 提出ファイルのピーク値 (dB)
+          span 上限を0dB以下で指定
+        input#peak type="number" name="peak" required="required" value="0" max="0"
+      p.col_12
+        label 締め切り後の提出
+        input#prohibit_late_submission_false type="radio" name="prohibit_late_submission" value="0" checked="checked"
+        label.inline for="prohibit_late_submission_false" 許可　
+        input#prohibit_late_submission_true type="radio" name="prohibit_late_submission" value="1"
+        label.inline for="prohibit_late_submission_true" 禁止　
+      p.col_12
+        label for="other_requirements" その他の条件
+        textarea#other_requirements name="other_requirements"
+    p.col_12
+      input.orange type="submit" value="作成"
