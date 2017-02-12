@@ -1,0 +1,47 @@
+.col_12
+  h3 アカウント設定
+
+  h4 一般設定
+  form
+    p
+      label.col_4 for="email" メールアドレス
+      input.col_8#email type="text" value="hogehoge@example.com" required="required"
+    p
+      label.col_4 for="name" お名前
+      input.col_8#name type="text" value="名無しさん" required="required"
+    p
+      label.col_4 for="website" Webサイト
+      input.col_8#website type="text" value="http://13fish.xxxxxxxx.jp"
+    p
+      label.col_4 for="twitter"
+        | Twitter
+        span.right @
+      input.col_8#twitter type="text" value="sashim1343"
+    p
+      span.left.col_6
+        button.orange type="submit" 更新
+      span.right.col_6
+        a.button href="/dashboard/settings" キャンセル
+
+  hr
+
+  h4 クラウドサービス連携設定
+  p
+    | Dropboxなどのクラウドサービスと連携し、あなたが開催したコンピへの提出楽曲を
+      クラウドストレージに保存することができます
+  p
+    .col_4 Dropbox
+    .col_8
+      | 状態：連携が有効になっていません
+      br
+      a.button.green href="#"
+        i.fa.fa-dropbox
+        | 連携を許可する
+  p
+    .col_4 Google Drive
+    .col_8
+      | 状態：連携が有効です
+      br
+      a.button href="#"
+        i.fa.fa-google
+        | 許可を取り消す
